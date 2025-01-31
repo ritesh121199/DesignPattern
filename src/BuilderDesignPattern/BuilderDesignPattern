@@ -1,0 +1,12 @@
+builder design pattern is used to create complex object
+having high number of optional parameter in step by step
+
+
+it consist of 5 main componensts
+
+1) Product - this is product that consist of many fields (In this example - computer is product)
+2) Builder interface - containing various abstract methods for creating product in steps (
+3) Concrete Builder - define each steps methods and return product also (in this cae GamingComputerBuilder)
+4) Director  - uses builder class to create product by using required step(in this case ComputerDirecor)
+5) Client
+

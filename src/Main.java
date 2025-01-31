@@ -1,3 +1,11 @@
+import BuilderDesignPattern.Builder;
+import BuilderDesignPattern.Computer;
+import BuilderDesignPattern.ConputerDirector;
+import BuilderDesignPattern.GamingComputerBuilder;
+import FactoryDesignPattern.Client;
+import FactoryDesignPattern.TwoWheelerFactory;
+import FactoryDesignPattern.Vehicle;
+import FactoryDesignPattern.VehicleFactory;
 import Prototype.Prototype;
 import Prototype.Student;
 import Singleton.SingletonSample;
@@ -23,6 +31,20 @@ public class Main {
         // and that can be accessed only inside that method
         Student studentFirst =new Student("Ritesh",1);
         Prototype studentFirstcopy=studentFirst.clone();
+
+        //FcatoryDesignPattern
+        VehicleFactory twoWheelerFactory=new TwoWheelerFactory();
+        Client newClient=new Client();
+        Vehicle newVehicle= newClient.createVehicle(twoWheelerFactory);
+        newVehicle.printVehicle();
+
+        //builder design pattern
+        Builder gamingComputer= new GamingComputerBuilder();
+        ConputerDirector gamingComputerDirector= new ConputerDirector();
+        gamingComputerDirector.create(gamingComputer);
+        Computer newComputer= gamingComputer.getResult();
+
+
 
     }
 }

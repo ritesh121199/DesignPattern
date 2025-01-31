@@ -1,0 +1,16 @@
+Factory Method design pattern consist of four component
+
+1) ProductInterface
+2)ConcreteProduct extending ProductInterface
+3) Factory Interface
+4) ConcreteFactory
+
+factory method design pattern seperate creation of object logic on the basis of type from its client code
+and create seperate factory class
+
+so whenever we need to add new type of prodict , we dont need to change client code
+
+we can simply use factory and productinterface
+
+
+
