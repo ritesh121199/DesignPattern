@@ -1,0 +1,31 @@
+It is used to creat create class on the base of some class
+
+like adding topping on base pizza , adding differnt flavour on base coffe
+
+why do we need decorator design pattern ?
+
+to avoid class explosion ?
+
+
+suppose if you create differnce permutatuion of class like differnt permutaion of toppings it will crete large number of class
+which is difficult to manage
+
+It has four components
+
+1) component interface - it is an interace or abstract class which is extended by concrete component and
+                        decorator both. in this eample , It is represented by BasePizza
+2) concrete component - it a class that extends concrete componsent and on
+                        which additional feature is added using decoraor class.(FarmHouse and VegDeight are reprsented as this)
+3) decorator(Important role play as it has well as is-a relationship) - it is being used to add feture to base class .
+it extends component interface as well as has its object (Topping Decorator is represented by this )
+4) concrete decorator - it extends decorator with different feature name.Tomatoa and Mushrrom represent this
+
+in this package , we will show an exammple of pizza
+
+where we create two base pizza
+
+abd will create two decorator which will work as topping
+
+and then we can use any combination of base pizza with differnt combination of topping , which is main purpose of decorator
+
+i.e to decorator any base class

@@ -9,6 +9,7 @@ import FactoryDesignPattern.VehicleFactory;
 import Prototype.Prototype;
 import Prototype.Student;
 import Singleton.SingletonSample;
+import StructuralDesignPattern.DecoratorPattern.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -43,6 +44,14 @@ public class Main {
         ConputerDirector gamingComputerDirector= new ConputerDirector();
         gamingComputerDirector.create(gamingComputer);
         Computer newComputer= gamingComputer.getResult();
+
+        //decorator design pattern
+
+        // to crrate farmhouse with tomato as topping
+        int costOfFarmhouseWithTomato = new Tomato(new Farmhouse()).getCost();
+
+        // to create vegdelight with mushrrom and tomato both as topping
+        int cost = new Mushroom(new Tomato(new VegDelight())).getCost();
 
 
 
