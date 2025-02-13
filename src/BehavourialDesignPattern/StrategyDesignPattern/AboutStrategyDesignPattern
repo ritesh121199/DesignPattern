@@ -1,0 +1,6 @@
+// strategy design will be useful if your multiple child class have some different behaviour than its parent class
+but same behaviour at child level. so we can seperate out starategy to some iterface and create different strategy
+
+so avoiding writing same code in every child class ,
+you can create strategy class which can be used by child class to execute same tpe of strategy without
+containg duplicate code

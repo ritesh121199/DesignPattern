@@ -1,2 +1,6 @@
-package BehavourialDesignPattern.StrategyDesignPattern;public interface DriveStrategy {
+package BehavourialDesignPattern.StrategyDesignPattern;
+
+public interface DriveStrategy {
+
+    public void drive();
 }

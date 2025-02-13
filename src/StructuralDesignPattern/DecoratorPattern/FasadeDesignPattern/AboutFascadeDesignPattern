@@ -1,0 +1,7 @@
+fascade design basically only used to show required methods
+to client not entire internal implementation so that if there is
+any change made at internal implementation , it should not impact internal implementation
+
+or it will be used to show or expose only certain method s out of various available methods to client.
+
+client will interact through fascade layer

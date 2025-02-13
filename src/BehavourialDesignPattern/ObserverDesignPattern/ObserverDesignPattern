@@ -1,0 +1,10 @@
+observer design pattern updates all all observer if there is any change in state of subject .
+
+it allow communication between different object .
+
+subject maintain a list of observer , which will be notified if there is any change in state .
+
+subject provide a method to register and dergister observer and method to update value , which will notify all its observer.
+
+
+obserevr provide a method notify , which will be used by subject to notify observer 

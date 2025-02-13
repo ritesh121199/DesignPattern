@@ -10,6 +10,7 @@ import Prototype.Prototype;
 import Prototype.Student;
 import Singleton.SingletonSample;
 import StructuralDesignPattern.DecoratorPattern.*;
+import StructuralDesignPattern.DecoratorPattern.FasadeDesignPattern.ProductOrderFascade;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -53,6 +54,9 @@ public class Main {
         // to create vegdelight with mushrrom and tomato both as topping
         int cost = new Mushroom(new Tomato(new VegDelight())).getCost();
 
+        // FASCADE DESIGN PATTERN
+        ProductOrderFascade productOrderFascade= new ProductOrderFascade();
+        productOrderFascade.createOrder();// using this method , client is independent of internal implementation
 
 
     }
